@@ -18,8 +18,8 @@ app.use(
   })
 );
 
-app.use("/api/v1/users", userRouter);
-app.use("/api/v1/tasks", taskRouter);
+app.use("/api/auth", userRouter);
+app.use("/api/tasks", taskRouter);
 
 app.get("/", (req, res) => {
   res.json({
